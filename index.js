@@ -86,3 +86,14 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+console.log("Total months = " + finances.length);
+
+count = 0;  
+
+let totalMonths = 0;
+let totalProfit = 0;
+let avgChange = 0;
+let maxChange = 0;
+let minChange = 0;
+
+
