@@ -90,10 +90,19 @@ console.log("Total months = " + finances.length);
 
 count = 0;  
 
-let totalMonths = 0;
-let totalProfit = 0;
+let totalMonths = finances.length;
+var totalProfit = 0;
 let avgChange = 0;
 let maxChange = 0;
 let minChange = 0;
+console.log("Total months = " + totalMonths);
 
-
+var testFinances = [
+    ['Jan-2010', 867884],
+    ['Feb-2010', 984655],
+    ['Mar-2010', 322013],
+    ['Apr-2010', -69417],
+    ['May-2010', 310503],]
+    testMonth = testFinances[1];
+    totalProfit = testMonth[1];
+    console.log("second month profit = " + totalProfit);
