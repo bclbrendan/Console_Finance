@@ -97,12 +97,23 @@ let maxChange = 0;
 let minChange = 0;
 console.log("Total months = " + totalMonths);
 
-var testFinances = [
+let testFinances = [
     ['Jan-2010', 867884],
     ['Feb-2010', 984655],
     ['Mar-2010', 322013],
     ['Apr-2010', -69417],
     ['May-2010', 310503],]
-    testMonth = testFinances[1];
+    var testMonth = testFinances[1];
     totalProfit = testMonth[1];
     console.log("second month profit = " + totalProfit);
+totalProfit = 0
+for (var i = 0; i < testFinances.length; i++){
+    var currentMonth = testFinances[i];
+    console.log(currentMonth);
+    console.log(currentMonth[1]);
+    var monthProfit = currentMonth[1];
+    console.log(monthProfit);
+    totalProfit = totalProfit + monthProfit;
+}
+console.log("total profit = " + totalProfit);
+
