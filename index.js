@@ -96,7 +96,7 @@ let avgChange = 0;
 let maxChange = 0;
 let minChange = 0;
 console.log("Total months = " + totalMonths);
-
+changeArray=[];
 let testFinances = [
     ['Jan-2010', 867884],
     ['Feb-2010', 984655],
@@ -116,4 +116,12 @@ for (var i = 0; i < testFinances.length; i++){
     totalProfit = totalProfit + monthProfit;
 }
 console.log("total profit = " + totalProfit);
+
+
+for (var i = 0; i < 3; i++){
+changeArray.push(testFinances[i]);
+}
+
+console.log("testing adding to array" + changeArray);
+
 
