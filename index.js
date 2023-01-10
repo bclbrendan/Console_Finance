@@ -116,12 +116,25 @@ for (var i = 0; i < testFinances.length; i++){
     totalProfit = totalProfit + monthProfit;
 }
 console.log("total profit = " + totalProfit);
+let previousProfit = 0;
+let currentProfit = 0;
+for (var i = 1; i < testFinances.length; i++){
+    var currentMonth = testFinances[i];
+    var previousMonth= testFinances[i-1]
+    previousProfit = previousMonth[1];
+    currentProfit = currentMonth[1];
+changeProfit = currentProfit -  previousProfit;
+console.log("change : " + changeProfit);
 
+ //   if(i=0){
+  //  changeArray.push([currentMonth[0], 0]);
+   // console.log("first month" + changeArray)
 
-for (var i = 0; i < 3; i++){
-changeArray.push(testFinances[i]);
+//}
+//else{ 
+//changeArray.push([currentMonth[0],currentMonth[1]]);
+//}
 }
-
 console.log("testing adding to array" + changeArray);
 
 
